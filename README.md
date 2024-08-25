@@ -62,15 +62,13 @@ Check that no services are listening on non-standard or insecure ports.
 
 4. Firewall and Network Security:
 Verify that a firewall (e.g., iptables, ufw) is active and configured to block unauthorized access.
-3/4
 Report any open ports and their associated services.
 Check for and report any IP forwarding or other insecure network configurations.
 
 5. IP and Network Configuration Checks:
 Public vs. Private IP Checks:
 * Identify whether the server's IP addresses are public or private.
-[6:52 pm, 25/8/2024] Manmath: * Provide a summary of all IP addresses assigned to the server, specifying which are public and which are private.
-
+* Provide a summary of all IP addresses assigned to the server, specifying which are public and which are private.
 * Ensure that sensitive services (e.g., SSH) are not exposed on public IPs unless required.
 
 6. Security Updates and Patching:

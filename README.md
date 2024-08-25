@@ -69,7 +69,40 @@ Check for and report any IP forwarding or other insecure network configurations.
 5. IP and Network Configuration Checks:
 Public vs. Private IP Checks:
 * Identify whether the server's IP addresses are public or private.
-* Provide a summary of all IP addresses assigned to the server
+[6:52 pm, 25/8/2024] Manmath: * Provide a summary of all IP addresses assigned to the server, specifying which are public and which are private.
+
+* Ensure that sensitive services (e.g., SSH) are not exposed on public IPs unless required.
+
+6. Security Updates and Patching:
+Check for and report any available security updates or patches.
+Ensure that the server is configured to receive and install security updates regularly.
+
+7. Log Monitoring:
+Check for any recent suspicious log entries that may indicate a security breach, such as too many login attempts on SSH.
+
+8. Server Hardening Steps:
+SSH Configuration:
+* Implement SSH key-based authentication and disable password- based login for root.
+* Ensure that SSH keys are securely stored and used.
+- Disabling IPv6 (if not required):
+* Disable IPv6 if it is not in use, following the provided guidelines.
+* Update services like SafeSquid to listen on the correct IPv4 addresses after disabling IPv6.
+
+Securing the Bootloader:
+* Set a password for the GRUB bootloader to prevent unauthorized changes to boot parameters.
+Firewall Configuration:
+* Implement the recommended
+* Implement the recommended iptables rules, including default policies, loopback interface acceptance, and specific port allowances.
+
+Automatic Updates:
+* Configure unattended-upgrades to automatically apply security updates and remove unused packages, following the provided guidelines.
+9. Custom Security Checks:
+Allow the script to be easily extended with custom security checks based on specific organizational policies or requirements.
+Include a configuration file where custom checks can be defined and managed.
+
+10. Reporting and Alerting:
+Generate a summary report of the security audit and hardening process, highlighting any issues that need attention.
+Optionally, configure the script to send email alerts or notifications if critical vulnerabilities or misconfigurations are foundr
 
 
 ##################### Run this script using below command #############

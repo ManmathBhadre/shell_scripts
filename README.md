@@ -94,17 +94,10 @@ Firewall Configuration:
 * Implement the recommended
 * Implement the recommended iptables rules, including default policies, loopback interface acceptance, and specific port allowances.
 
-Automatic Updates:
-* Configure unattended-upgrades to automatically apply security updates and remove unused packages, following the provided guidelines.
-9. Custom Security Checks:
-Allow the script to be easily extended with custom security checks based on specific organizational policies or requirements.
-Include a configuration file where custom checks can be defined and managed.
-
-10. Reporting and Alerting:
-Generate a summary report of the security audit and hardening process, highlighting any issues that need attention.
 Optionally, configure the script to send email alerts or notifications if critical vulnerabilities or misconfigurations are foundr
 
-
+```
 ##################### Run this script using below command #############
 
-bash security_audit_server_harddening.sh
+# bash security_audit_server_harddening.sh
+```

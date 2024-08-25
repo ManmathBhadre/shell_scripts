@@ -73,4 +73,5 @@ Public vs. Private IP Checks:
 
 
 ##################### Run this script using below command #############
+
 bash security_audit_server_harddening.sh

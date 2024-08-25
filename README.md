@@ -27,21 +27,23 @@ Include a section to monitor the status of essential services like sshd, nginx/a
 8. Custom Dashboard:
 Provide command-line switches to view specific parts of the dashboard, e.g., -cpu, -memory, -network, etc.
 
-
+```
 ######## run the script using below command######
-bash resources_monitoring.sh
+
+# bash resources_monitoring.sh
 
 for calling indivisual part of dashboard taking input from user for
 cpu, memory, netowrk sush as
 
+Enter specific part of your Dashboard:
+ex.1: cpu
 Enter specific part of your Dashboard
-cpu
+ex.2:  momory
 Enter specific part of your Dashboard
-momory
-Enter specific part of your Dashboard
-network
+ex.3: network
 
-
+########################################################
+```
 Second script 
 
 

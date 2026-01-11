@@ -35,7 +35,10 @@ jobs:
           pip install pyOpenSSL
           python --version
           pip install pymysql
-          
+
+      - name: run python file
+        run: |
+          python firstfile.py
         
 
        
